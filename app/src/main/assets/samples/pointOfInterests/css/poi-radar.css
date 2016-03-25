@@ -1,0 +1,30 @@
+/* position of POI-radar*/
+
+.radarContainer_left {
+	position:absolute;
+	top:35px;
+	left:0px;
+	width:100px;
+	height:100px;
+}
+
+.radarContainer_right {
+	position:absolute;
+	top:35px;
+	right:0px;
+	width:100px;
+	height:100px;
+}
+
+.ui-panel {
+    width: 30em;
+}
+
+a.anchor-style {
+	color: red;
+	text-decoration: none;
+}
+
+.custom-panel-styling {
+	background: red;
+}

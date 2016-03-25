@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    
+    <title></title>
+
+    <script src="architect://architect.js"></script>
+    <script type="text/javascript" src="../ade.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.0.25.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <div id="loadingMessage" class="info" style='display: table-cell;vertical-align: middle; text-align: center; width: 100%; padding-right: 50px;'>Scan Corresponding Client Tracker Images:
+       <img src="assets/conferencechair.png"/>
+        <img src="assets/qr_buggy.png"/>
+        <img src="assets/homeliving.png"/>
+        <img src="assets/whitechair.png"/>
+        <img src="assets/browntable.png"/>
+    </div>
+
+    <div id="awsvalues">
+
+    </div>
+    <!--<div style='display: table-cell;vertical-align: middle; text-align: left;'><img src="assets/conferencechair.png"/></div>-->
+    <div id="snapContainer"></div>
+    <script type="text/javascript">
+        AWS.config.accessKeyId = '';
+        AWS.config.secretAccessKey = '';
+        AWS.config.region = 'us-east-1';
+    </script>
+
+    <!--<script type="text/javascript">-->
+        <!--var bucket = new AWS.S3({params: {Bucket: 'ramyakysamplebucket'}});-->
+        <!--console.log("Inside my script tag");-->
+        <!--bucket.listObjects(function (err, data) {-->
+            <!--if (err) {-->
+                <!--console.log("Inside error");-->
+                <!--console.log("Failed");-->
+            <!--} else {-->
+                <!--document.getElementById("awsvalues").innerHTML = "abc.txt,xyz.txt";-->
+                <!--console.log("Testing : " + document.getElementById("awsvalues").innerHTML);-->
+                <!--for (var i = 0; i < data.Contents.length; i++) {-->
+                    <!--console.log("Inside for loop");-->
+                    <!--console.log("Value of I : " + i);-->
+                     <!--console.log("Length is : " + data.Contents.length);-->
+                    <!--console.log("Key : " + data.Contents[i].Key);-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
+    <!--</script>-->
+
+    <script src="js/snaptoscreen.js"></script>
+
+</body>
+</html>
