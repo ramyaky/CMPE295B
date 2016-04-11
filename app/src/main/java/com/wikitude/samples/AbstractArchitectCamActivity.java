@@ -27,6 +27,8 @@ import com.wikitude.architect.ArchitectView.ArchitectUrlListener;
 import com.wikitude.architect.ArchitectView.SensorAccuracyChangeListener;
 import com.wikitude.architect.StartupConfiguration;
 import com.wikitude.architect.StartupConfiguration.CameraPosition;
+import com.wikitude.samples.adapters.Constants;
+import com.wikitude.samples.adapters.Database;
 import com.wikitude.sdksamples.R;
 
 /**
@@ -144,6 +146,7 @@ public abstract class AbstractArchitectCamActivity extends Activity implements A
 					if (location!=null) {
 					// sore last location as member, in case it is needed somewhere (in e.g. your adjusted project)
 						AbstractArchitectCamActivity.this.lastKnownLocaton = location;
+						Constants.location = location;
 						System.out.println("Last know location : " + location);
 						if ( AbstractArchitectCamActivity.this.architectView != null ) {
 							// check if location has altitude at certain accuracy level & call right architect method (the one with altitude information)

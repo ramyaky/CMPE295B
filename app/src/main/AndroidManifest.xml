@@ -122,6 +122,18 @@
             android:name="com.wikitude.samples.ProductDetails"
             android:label="@string/title_activity_product_details" >
         </activity>
+        <activity
+            android:name="com.wikitude.samples.RotateActivity"
+            android:label="@string/title_activity_rotate" >
+        </activity>
+        <activity
+            android:name="com.wikitude.samples.utils.urllauncher.FindCarActivity"
+            android:label="@string/title_activity_find_car" >
+        </activity>
+        <activity
+            android:name="com.wikitude.samples.FindCarActivity"
+            android:label="@string/title_activity_find_car" >
+        </activity>
     </application>
 
 </manifest>

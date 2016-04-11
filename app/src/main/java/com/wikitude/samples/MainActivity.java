@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         ImageButton snaptoscreenButton = (ImageButton) findViewById(R.id.snaptoscreenButton);
         ImageButton catalog = (ImageButton)findViewById(R.id.catalog_button);
         ImageButton poiButton = (ImageButton) findViewById(R.id.poiButton);
+        ImageButton findMyCar = (ImageButton) findViewById(R.id.btn_findmyCar);
         snaptoscreenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +58,15 @@ public class MainActivity extends Activity {
                 intent.putExtra(EXTRAS_KEY_ACTIVITY_IR, false);
                 intent.putExtra(EXTRAS_KEY_ACTIVITY_GEO, true);
                 startActivity(intent);
+            }
+        });
+
+        findMyCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent carFinderIntent = new Intent(getApplicationContext(), FindCarActivity.class);
+                startActivity(carFinderIntent);
+
             }
         });
 

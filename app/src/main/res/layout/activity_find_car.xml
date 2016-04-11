@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.wikitude.samples.FindCarActivity"
+    android:background="@drawable/backgroundyellow">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click on Find Car Location to save your car&apos;s location"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_infoforCarLocation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fix Car Location"
+        android:id="@+id/btn_car_destination"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/tv_infoforCarLocation"
+        android:background="@drawable/gps"
+        android:layout_alignRight="@+id/tv_car_info"
+        android:layout_alignEnd="@+id/tv_car_info"
+        android:layout_alignLeft="@+id/tv_car_info"
+        android:layout_alignStart="@+id/tv_car_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fix Car Location"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btn_car_destination"
+        android:layout_alignLeft="@+id/btn_car_destination"
+        android:layout_alignStart="@+id/btn_car_destination"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your car is at : "
+        android:textColor="#ffffff"
+        android:id="@+id/tv_car_info"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_location"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tv_car_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find My Car"
+        android:textColor="#ffffff"
+        android:id="@+id/btn_findCar"
+        android:background="@drawable/findcar"
+        android:layout_below="@+id/tv_location"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are at : "
+        android:textColor="#000000"
+        android:id="@+id/tv_user_location"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/tv_car_info"
+        android:layout_alignEnd="@+id/tv_car_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_userLocation"
+        android:layout_below="@+id/tv_user_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Car Location"
+        android:textColor="#000000"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/btn_findCar"
+        android:layout_alignRight="@+id/btn_findCar"
+        android:layout_alignEnd="@+id/btn_findCar" />
+</RelativeLayout>

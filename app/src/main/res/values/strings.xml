@@ -23,4 +23,7 @@
     <string name="title_activity_product__details">Product_Details</string>
     <string name="title_activity_product_details">ProductDetails</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_rotate">RotateActivity</string>
+    <string name="title_activity_compass">CompassActivity</string>
+    <string name="title_activity_find_car">FindCarActivity</string>
 </resources>
